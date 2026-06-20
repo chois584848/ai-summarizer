@@ -733,13 +733,13 @@
 <div class="chat-panel" id="chat-panel">
   <div class="chat-head">
     <button><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button>
-    <span class="mid">Mimi</span>
+    <span class="mid">Roi</span>
     <button id="chat-close"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
   </div>
   <div class="chat-body">
     <div class="chat-date">Mar 09, 2026</div>
     <div class="chat-msg">
-      <div class="who"><img class="av" src="SupporterAvatar.png" alt="" /> Mimi</div>
+      <div class="who"><img class="av" src="SupporterAvatar.png" alt="" /> Roi</div>
       <div class="bubble">Hi! I can help you refine this summary. Want it shorter, more formal, turned into bullet points, or translated? Just tell me what to change and I'll rewrite it.</div>
       <div class="tools">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>
@@ -964,7 +964,7 @@
   /* ---------- Q&A chat ---------- */
   function appendMsg(who,text){const body=$('.chat-body');
     const html=who==='me'?`<div class="chat-msg me"><div class="bubble">${text.replace(/\n/g,'<br>')}</div></div>`
-      :`<div class="chat-msg mimi"><div class="who"><img class="av" src="SupporterAvatar.png" alt=""> Mimi</div><div class="bubble">${text.replace(/\n/g,'<br>')}</div></div>`;
+      :`<div class="chat-msg mimi"><div class="who"><img class="av" src="SupporterAvatar.png" alt=""> Roi</div><div class="bubble">${text.replace(/\n/g,'<br>')}</div></div>`;
     body.insertAdjacentHTML('beforeend',html);body.scrollTop=body.scrollHeight;}
   function mimiReply(q){const lo=q.toLowerCase();const has=CURRENT&&CURRENT.summary;
     if(/short|짧|tldr|tl;dr|줄여|간단/.test(lo)&&has)return `Sure — in one line: ${CURRENT.summary[0]}`;
